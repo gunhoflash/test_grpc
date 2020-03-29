@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package test.helloworld;
+
+service Greeter {
+    rpc SayHello (HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest {
+    int32 _int32 = 1;
+    float _float = 2;
+    bool _bool = 3;
+    string _string = 4;
+}
+
+message HelloResponse {
+    int64 _int64 = 1;
+    double _double = 2;
+    string _string = 3;
+}
